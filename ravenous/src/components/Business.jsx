@@ -1,27 +1,29 @@
-export default function Business(RESTAURANTS) {
+
+
+export default function Business(name, address, city, state, zipcode, category, rating, reviewCount) {
   return (
     <div className='business-tile'>
       <div className='business-image'>
-        <img src={RESTAURANTS.image} alt=''></img>
+        <h2>Possible Image location</h2>
       </div>
       <table>
         <thead>
           <tr>
-            <th>{RESTAURANTS.businessName}</th>
+            <th>{name}</th>
           </tr>
         </thead>
         <tbody>
           <tr>
-            <td>{RESTAURANTS.address}</td>
-            <td>{RESTAURANTS.category}</td>
+            <td>{address}</td>
+            <td>{category}</td>
           </tr>
           <tr>
-            <td>{RESTAURANTS.city}</td>
-            <td>{RESTAURANTS.rating} stars</td>
+            <td>{city}</td>
+            <td>{rating} stars</td>
           </tr>
           <tr>
-            <td>{RESTAURANTS.state} {RESTAURANTS.zipcode}</td>
-            <td>{RESTAURANTS.viewCount ? RESTAURANTS.viewCount : 0} reviews</td>
+            <td>{state} {zipcode}</td>
+            <td>{reviewCount ? reviewCount : 0} reviews</td>
           </tr>
         </tbody>
       </table>
@@ -30,4 +32,3 @@ export default function Business(RESTAURANTS) {
 }
 
 
-const RESTAURANTS = [{image: "ravenous/src/images/pizzapie.jpg", businessName: "MarginOtto Pizzeria", address: "1010 Paddington", city: "Bordertown", state: "NY", zipcode: "10101", category: "ITALIAN", rating: "4.5", viewCount: ""}];
