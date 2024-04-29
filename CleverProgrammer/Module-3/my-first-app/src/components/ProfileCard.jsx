@@ -13,7 +13,7 @@ const ProfileCard = ({image, name, title, description}) => {
               alt="" 
               height='50px'
               style={{borderRadius: 10}}
-        />
+            />
         <div>
             <h2 style={{backgroundColor: 'white', marginLeft: '10px'}}>{name}</h2>
             <h4 style={{backgroundColor: 'white', marginLeft: '10px'}}>{title}</h4>
