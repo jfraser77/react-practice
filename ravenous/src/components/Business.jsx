@@ -1,6 +1,6 @@
+// {name, address, city, state, zipcode, category, rating, reviewCount}
 
-
-export default function Business(name, address, city, state, zipcode, category, rating, reviewCount) {
+export default function Business({business }) {
   return (
     <div className='business-tile'>
       <div className='business-image'>
